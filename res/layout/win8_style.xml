@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.shixing.studycode.customview.win8style.Win8View
+        android:id="@+id/id_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="50dip"
+        android:clickable="true"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_click_deflect_left_top" />
+
+    <com.shixing.studycode.customview.win8style.Win8View
+        android:id="@+id/id_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="50dip"
+        android:layout_toRightOf="@id/id_joke"
+        android:clickable="true"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_click_deflect_right" />
+
+    <com.shixing.studycode.customview.win8style.Win8View
+        android:id="@+id/id_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_joke"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="2dip"
+        android:clickable="true"
+        android:layout_marginTop="2dip"
+        android:layout_toLeftOf="@id/id_star"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_click_deflect_left_bottom" />
+
+    <com.shixing.studycode.customview.win8style.Win8View
+        android:id="@+id/id_recomend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_create"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="2dip"
+        android:clickable="true"
+        android:scaleType="matrix"
+        android:src="@drawable/ic_click_deflect_bottom" />
+
+</RelativeLayout>

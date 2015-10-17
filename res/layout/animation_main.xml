@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/viewgroup_anim" />
+
+    <ImageView
+        android:id="@+id/anim_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/composer_button" />
+
+    <ImageView
+        android:id="@+id/anim_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/shishi" />
+
+    <HorizontalScrollView
+        android:id="@+id/anim_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="rotateyAnimRun"
+                android:text="@string/anima_rotate" />
+
+            <Button
+                android:id="@+id/button_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="smallAnimRun"
+                android:text="@string/anima_small" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="resetAnimRun"
+                android:text="@string/anima_reset" />
+
+            <Button
+                android:id="@+id/button_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="verticalAnimRun"
+                android:text="@string/anima_vertical" />
+
+            <Button
+                android:id="@+id/button_paowu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="paowuAnimRun"
+                android:text="@string/anima_paowu" />
+
+            <Button
+                android:id="@+id/button_together"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="togetherAnimRun"
+                android:text="@string/anima_together" />
+
+            <Button
+                android:id="@+id/button_sequeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="layoutAnimRun"
+                android:text="@string/anima_layout" />
+
+            <Button
+                android:id="@+id/button_sequeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sequealAnimRun"
+                android:text="@string/anima_sequeal" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

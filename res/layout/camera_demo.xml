@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ轴旋转(单位:角度,范围0-360)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_1"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="360" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_2"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="360" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_3"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="360" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XY轴倾斜" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_4"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="200" />
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_5"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="200" />
+
+        <TextView
+            android:id="@+id/text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z轴缩放" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z轴:" />
+
+        <SeekBar
+            android:id="@+id/seekbar_6"
+            android:layout_width="@dimen/camera_seekbar_width"
+            android:layout_height="@dimen/camera_seekbar_height"
+            android:max="200" />
+
+        <TextView
+            android:id="@+id/text_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shishi"
+        />
+</LinearLayout>

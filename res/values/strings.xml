@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InDeep</string>
+    <string name="bitmap_process">完美位图处理</string>
+    <string name="private_video">我的私人影院</string>
+    <string name="custom_view">自定义View</string>
+    <string name="scroll_fragment">滑动Fragment</string>
+    <string name="horizontall_scroll">HorizontallScroll</string>
+    <string name="shwo_anim">动画示例</string>
+    <string name="image_loader">ImageLoader</string>
+    <string name="weixin_text_hint">Please input</string>
+    <string name="fragment_one">页面一</string>
+    <string name="fragment_two">页面二</string>
+    <string name="fragment_three">页面三</string>
+    <string name="home_note">上滑可以进入首页</string>
+    <string name="anima_rotate">旋转</string>
+    <string name="anima_small">缩小</string>
+    <string name="anima_reset">恢复</string>
+    <string name="anima_vertical">垂直</string>
+    <string name="anima_paowu">抛物线</string>
+    <string name="anima_together">一起</string>
+    <string name="anima_sequeal">先后</string>
+    <string name="anima_layout">布局</string>
+
+</resources>

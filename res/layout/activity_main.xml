@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.shixing.studycode.customview.views.RippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bitmap_process"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_1"
+            android:onClick="startBitMapActivity"
+            android:text="@string/bitmap_process" />
+
+        <Button
+            android:id="@+id/private_video"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_2"
+            android:onClick="startPrivateVidoActivity"
+            android:text="@string/private_video" />
+
+        <Button
+            android:id="@+id/custom_view"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_1"
+            android:onClick="startCustomViewActivity"
+            android:text="@string/custom_view" />
+
+        <Button
+            android:id="@+id/scroll_fragment"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_2"
+            android:onClick="startScrollFragmentActivity"
+            android:text="@string/scroll_fragment" />
+
+        <Button
+            android:id="@+id/horizontall_scroll"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_1"
+            android:onClick="startHorizontalActivity"
+            android:text="@string/horizontall_scroll" />
+
+        <Button
+            android:id="@+id/show_animation"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_2"
+            android:onClick="startAnimationActivity"
+            android:text="@string/shwo_anim" />
+
+        <Button
+            android:id="@+id/image_loader"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/button_background_color_1"
+            android:onClick="startImageLoaderActivity"
+            android:text="@string/image_loader" />
+
+
+        <EditText
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/winxin_input_text"
+            android:hint="@string/weixin_text_hint" />
+    </com.shixing.studycode.customview.views.RippleLayout>
+
+    <com.shixing.studycode.customview.views.PullDoorView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_note"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </com.shixing.studycode.customview.views.PullDoorView>
+
+</FrameLayout>
