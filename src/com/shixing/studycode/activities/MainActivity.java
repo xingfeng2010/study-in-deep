@@ -96,4 +96,9 @@ public class MainActivity extends Activity {
         this.startActivity(intent);
     }
 
+    public void startTurnViewActivity(View view) {
+        Intent intent = new Intent(this, TurnViewActivity.class);
+        this.startActivity(intent);
+    }
+
 }

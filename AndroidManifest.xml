@@ -74,6 +74,8 @@
         <activity android:name="com.shixing.studycode.activities.BitMapActivity" />
 
         <activity android:name="com.shixing.studycode.activities.CustomViewActivity" />
+        
+        <activity android:name="com.shixing.studycode.activities.TurnViewActivity" />
 
         <activity android:name="com.shixing.studycode.indicatefragment.ScrollFragmentActivity" />
 

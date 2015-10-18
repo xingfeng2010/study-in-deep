@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.shixing.studycode.customview.views.RippleLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
@@ -20,6 +20,7 @@
             android:id="@+id/private_video"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_toRightOf ="@+id/bitmap_process"
             android:background="@color/button_background_color_2"
             android:onClick="startPrivateVidoActivity"
             android:text="@string/private_video" />
@@ -28,6 +29,7 @@
             android:id="@+id/custom_view"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_toRightOf ="@+id/private_video"
             android:background="@color/button_background_color_1"
             android:onClick="startCustomViewActivity"
             android:text="@string/custom_view" />
@@ -36,14 +38,17 @@
             android:id="@+id/scroll_fragment"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_toRightOf ="@+id/custom_view"
             android:background="@color/button_background_color_2"
             android:onClick="startScrollFragmentActivity"
             android:text="@string/scroll_fragment" />
 
+          <!--         第二排 -->
         <Button
             android:id="@+id/horizontall_scroll"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_below ="@+id/bitmap_process"
             android:background="@color/button_background_color_1"
             android:onClick="startHorizontalActivity"
             android:text="@string/horizontall_scroll" />
@@ -52,6 +57,8 @@
             android:id="@+id/show_animation"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_below ="@+id/bitmap_process"
+            android:layout_toRightOf ="@+id/horizontall_scroll"
             android:background="@color/button_background_color_2"
             android:onClick="startAnimationActivity"
             android:text="@string/shwo_anim" />
@@ -60,6 +67,8 @@
             android:id="@+id/image_loader"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_below ="@+id/bitmap_process"
+            android:layout_toRightOf ="@+id/show_animation"
             android:background="@color/button_background_color_1"
             android:onClick="startImageLoaderActivity"
             android:text="@string/image_loader" />
@@ -68,10 +77,22 @@
         <EditText
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
+            android:layout_below ="@+id/bitmap_process"
+            android:layout_toRightOf ="@+id/image_loader"
             android:layout_marginTop="10dip"
             android:background="@drawable/winxin_input_text"
             android:hint="@string/weixin_text_hint" />
-    </com.shixing.studycode.customview.views.RippleLayout>
+
+                  <!--         第三排 -->
+       <Button
+            android:id="@+id/turn_view"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_below ="@+id/horizontall_scroll"
+            android:background="@color/button_background_color_1"
+            android:onClick="startTurnViewActivity"
+            android:text="@string/zhuan_pan" />
+    </RelativeLayout>
 
     <com.shixing.studycode.customview.views.PullDoorView
         android:layout_width="match_parent"
