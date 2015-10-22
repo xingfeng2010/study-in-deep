@@ -101,4 +101,12 @@ public class MainActivity extends Activity {
         this.startActivity(intent);
     }
 
+    /**
+     * launch guaguaka activity
+     * @param view
+     */
+    public void statGuaguakaView(View view) {
+        Intent intent = new Intent(this, GuaGuaKaActivity.class);
+        this.startActivity(intent);
+    }
 }
