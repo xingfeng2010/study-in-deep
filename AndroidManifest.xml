@@ -78,6 +78,8 @@
         <activity android:name="com.shixing.studycode.activities.TurnViewActivity" />
 
         <activity android:name="com.shixing.studycode.activities.GuaGuaKaActivity" />
+        
+        <activity android:name="com.shixing.studycode.activities.MultiTouchActivity" />
 
         <activity android:name="com.shixing.studycode.indicatefragment.ScrollFragmentActivity" />
 

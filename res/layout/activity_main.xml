@@ -103,6 +103,16 @@
             android:background="@color/button_background_color_1"
             android:onClick="statGuaguakaView"
             android:text="@string/guaguaka" />
+
+          <Button
+            android:id="@+id/multi_touch"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/horizontall_scroll"
+            android:layout_toRightOf="@+id/turn_view"
+            android:background="@color/button_background_color_2"
+            android:onClick="statMultiTouchView"
+            android:text="@string/multi_touch" />
     </RelativeLayout>
 
     <com.shixing.studycode.customview.views.PullDoorView

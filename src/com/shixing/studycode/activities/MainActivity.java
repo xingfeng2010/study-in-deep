@@ -109,4 +109,9 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, GuaGuaKaActivity.class);
         this.startActivity(intent);
     }
+
+    public void statMultiTouchView(View view) {
+        Intent intent = new Intent(this, MultiTouchActivity.class);
+        this.startActivity(intent);
+    }
 }
